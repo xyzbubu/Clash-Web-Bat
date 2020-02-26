@@ -6,7 +6,6 @@ SET PATH="%~dp0";"%~dp0App";%PATH%
 :menu
 CD /D %~DP0
 taskkill /IM subconverter.exe >NUL 2>NUL
-reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f >NUL
 cls
 echo.&echo.
 echo -------------------------------------
@@ -56,7 +55,7 @@ echo.
 choice /C:12X /N /M "请输入你的选项 ："
 
 if errorlevel 3 exit
-if errorlevel 2 goto :menu
+if errorlevel 2 reg add "HKCU\Software\Microsoft\Windows\CurrentVersion\Internet Settings" /v ProxyEnable /t REG_DWORD /d 0 /f >NUL &goto :menu
 if errorlevel 1 goto :setproxy
 
 :setproxy
