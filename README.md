@@ -4,6 +4,7 @@
 于是，我就写了一个批处理脚本，可以方便的控制 clash 的启动和关闭，下载配置文件，添加到开机启动等。
 
 外行所写，大佬轻拍。
+P.S. 下载请到这里 release，直接 Clone or download 可能会出错。
 
 ![](https://raw.githubusercontent.com/pcysanji/Clash-Web-Bat/master/screenshot/screenshot1.png)
 
@@ -67,6 +68,10 @@ A：这两项是因为网页没有动系统设置的权限，我已在批处理�
 
 ## 更新记录
 2020-02-26
+V1.3.2
+BUG 修复
+ - 完全解决开机自启的BUG。现在开机后如果成功启动clash，会弹一个小窗提示，并在5s后关闭弹窗
+ 
 V1.3.1
 BUG 修复
  - 启动 clash 找不到文件

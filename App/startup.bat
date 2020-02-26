@@ -32,7 +32,7 @@ if errorlevel 2 goto :delete
 if errorlevel 1 goto :startup
 
 :startup
-Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "clash-web" /t REG_SZ /d "\"%~dp0start-clash.vbs\"" /f
+Reg.exe add "HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Run" /v "clash-web" /t REG_SZ /d "\"%~dp0startupclash.bat\"" /f
 
 echo 添加成功按任意键返回主菜单 &pause >NUL
 call Clash-Web-Bat.CMD
