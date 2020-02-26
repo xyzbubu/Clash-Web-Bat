@@ -53,6 +53,9 @@ URL 编码后为 https%3a%2f%2fgoogle.com%2f
 自动下载更新 MaxMind 的 GeoIP lite 数据库
 ![](https://raw.githubusercontent.com/pcysanji/Clash-Web-Bat/master/screenshot/screenshot3.gif)
 
+### 注意事项
+1.3.2 版开始在下载配置的时候是可以自定义配置名的。需要注意的是，首次启用clash时，默认加载的配置是config.yaml。建议首次使用时，先用 selectprofile.cmd 输入需要加载配置文件名称，这个名称是下载配置时你设置的名称，也可以是你自己修改的配置文件名。需要切换配置文件时，也是使用此方法进行选择配置文件。
+
 ## 常见问题
 Q：面板设置中的“开机时启动”和“设置为系统代理”无法使用。
 A：这两项是因为网页没有动系统设置的权限，我已在批处理中添加设想功能。
